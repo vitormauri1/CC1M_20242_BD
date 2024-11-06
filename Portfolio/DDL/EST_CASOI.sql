@@ -1,4 +1,4 @@
--- Tabela: Fornecedor
+
 CREATE TABLE Fornecedor (
     codigo_fornecedor INT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE Fornecedor (
     historico_fornecimento TEXT
 );
 
--- Tabela: Produto
+
 CREATE TABLE Produto (
     codigo_produto INT PRIMARY KEY,
     nome_produto VARCHAR(255) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE Produto (
     ponto_ressuprimento INT DEFAULT 0
 );
 
--- Tabela: Pedido de Compra
+
 CREATE TABLE PedidoCompra (
     numero_pedido INT PRIMARY KEY,
     data_pedido DATE NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE PedidoCompra (
     FOREIGN KEY (codigo_fornecedor) REFERENCES Fornecedor(codigo_fornecedor)
 );
 
--- Tabela Associativa: PedidoCompra_Produto
+
 CREATE TABLE PedidoCompra_Produto (
     numero_pedido INT,
     codigo_produto INT,
@@ -42,7 +42,7 @@ CREATE TABLE PedidoCompra_Produto (
     FOREIGN KEY (codigo_produto) REFERENCES Produto(codigo_produto)
 );
 
--- Tabela: Recebimento de Materiais
+
 CREATE TABLE RecebimentoMateriais (
     numero_recebimento INT PRIMARY KEY,
     data_recebimento DATE NOT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE RecebimentoMateriais (
     FOREIGN KEY (numero_pedido) REFERENCES PedidoCompra(numero_pedido)
 );
 
--- Tabela: Filial
+
 CREATE TABLE Filial (
     codigo_filial INT PRIMARY KEY,
     nome_filial VARCHAR(255) NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE Filial (
     capacidade_armazenagem INT
 );
 
--- Tabela Associativa: DistribuicaoFilial_Produto
+
 CREATE TABLE DistribuicaoFilial_Produto (
     codigo_distribuicao INT,
     codigo_produto INT,
@@ -71,7 +71,7 @@ CREATE TABLE DistribuicaoFilial_Produto (
     FOREIGN KEY (codigo_produto) REFERENCES Produto(codigo_produto)
 );
 
--- Tabela: Distribuição para Filiais
+
 CREATE TABLE DistribuicaoFilial (
     codigo_distribuicao INT PRIMARY KEY,
     data_transferencia DATE NOT NULL,
