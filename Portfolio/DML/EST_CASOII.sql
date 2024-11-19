@@ -7,7 +7,7 @@ VALUES (1, 'Carlos Silva', '123.456.789-00', '9876-5432', 'Rua A, 123, São Paul
 INSERT INTO Passageiros (id_passageiro, nome, cpf, telefone, endereco)
 VALUES (2, 'Maria Oliveira', '987.654.321-00', '9123-4567', 'Avenida B, 456, Rio de Janeiro');
 
--- 3 mais comandos de INSERT para Passageiros...
+-- 3 mais comandos de INSERT para Passageiros
 
 -- Voos
 INSERT INTO Voos (id_voo, codigo_voo, origem, destino, hora_partida, hora_chegada)
@@ -16,7 +16,7 @@ VALUES (1, 'FHA100', 'São Paulo', 'Rio de Janeiro', '2024-11-20 10:00:00', '202
 INSERT INTO Voos (id_voo, codigo_voo, origem, destino, hora_partida, hora_chegada)
 VALUES (2, 'FHA200', 'Rio de Janeiro', 'São Paulo', '2024-11-21 15:00:00', '2024-11-21 16:30:00');
 
--- 3 mais comandos de INSERT para Voos...
+-- 3 mais comandos de INSERT para Voos
 
 -- Aeroportos
 INSERT INTO Aeroportos (id_aeroporto, codigo_aeroporto, nome_aeroporto, localizacao)
@@ -25,7 +25,7 @@ VALUES (1, 'GRU', 'Aeroporto Internacional de São Paulo', 'São Paulo');
 INSERT INTO Aeroportos (id_aeroporto, codigo_aeroporto, nome_aeroporto, localizacao)
 VALUES (2, 'SDU', 'Aeroporto Santos Dumont', 'Rio de Janeiro');
 
--- 3 mais comandos de INSERT para Aeroportos...
+-- 3 mais comandos de INSERT para Aeroportos
 
 -- Aeronaves
 INSERT INTO Aeronaves (id_aeronave, codigo_aeronave, modelo, capacidade)
@@ -34,7 +34,7 @@ VALUES (1, 'B737', 'Boeing 737', 180);
 INSERT INTO Aeronaves (id_aeronave, codigo_aeronave, modelo, capacidade)
 VALUES (2, 'A320', 'Airbus A320', 150);
 
--- 3 mais comandos de INSERT para Aeronaves...
+-- 3 mais comandos de INSERT para Aeronaves
 
 -- Funcionários
 INSERT INTO Funcionarios (id_funcionario, nome_funcionario, cargo, telefone)
@@ -43,7 +43,7 @@ VALUES (1, 'João Pereira', 'Piloto', '9876-1111');
 INSERT INTO Funcionarios (id_funcionario, nome_funcionario, cargo, telefone)
 VALUES (2, 'Ana Souza', 'Comissária de bordo', '9123-2222');
 
--- 3 mais comandos de INSERT para Funcionários...
+-- 3 mais comandos de INSERT para Funcionários
 
 -- Reservas
 INSERT INTO Reservas (id_reserva, id_passageiro, id_voo, data_reserva)
@@ -52,7 +52,7 @@ VALUES (1, 1, 1, '2024-11-15');
 INSERT INTO Reservas (id_reserva, id_passageiro, id_voo, data_reserva)
 VALUES (2, 2, 2, '2024-11-16');
 
--- 3 mais comandos de INSERT para Reservas...
+-- 3 mais comandos de INSERT para Reservas
 
 -- Operações de Voo
 INSERT INTO Operacoes_Voo (id_operacao, id_voo, id_funcionario, data_operacao, papel)
@@ -61,7 +61,7 @@ VALUES (1, 1, 1, '2024-11-20', 'Piloto');
 INSERT INTO Operacoes_Voo (id_operacao, id_voo, id_funcionario, data_operacao, papel)
 VALUES (2, 1, 2, '2024-11-20', 'Comissário de bordo');
 
--- 3 mais comandos de INSERT para Operações de Voo...
+-- 3 mais comandos de INSERT para Operações de Voo
 
 -- 2. Comandos de UPDATE
 
