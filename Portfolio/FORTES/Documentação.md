@@ -60,9 +60,5 @@ A tabela `relatorios` armazena informações sobre os relatórios gerados:
 - Funcionários podem criar múltiplos projetos, editais e relatórios
 - Projetos podem ter múltiplas reuniões e relatórios
 
-## Índices
-- Índice de e-mail nas tabelas de funcionários e donatários para busca rápida
-- Índice de status nas tabelas de projetos e editais para filtragem
-- Índices de data nas tabelas de reuniões, editais e relatórios para consultas de calendário
-- Índice de tipo na tabela de relatórios para filtragem por tipo de relatório
+
 
