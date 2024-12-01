@@ -56,9 +56,4 @@ A tabela `relatorios` armazena informações sobre os relatórios gerados:
 - `projeto_id`: Referência ao projeto associado ao relatório
 - `funcionario_id`: Referência ao funcionário que criou o relatório
 
-## Relacionamentos
-- Funcionários podem criar múltiplos projetos, editais e relatórios
-- Projetos podem ter múltiplas reuniões e relatórios
-
-
 
