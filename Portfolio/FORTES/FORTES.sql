@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS projeto_fortes;
+
+USE projeto_fortes;
+
 
 CREATE TABLE IF NOT EXISTS funcionarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
