@@ -1,5 +1,5 @@
 -- Criar tabela Funcionários
-CREATE TABLE funcionarios (
+CREATE TABLE IF NOT EXISTS funcionarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -9,7 +9,7 @@ CREATE TABLE funcionarios (
 );
 
 -- Criar tabela Donatários
-CREATE TABLE donatarios (
+CREATE TABLE IF NOT EXISTS donatarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -18,7 +18,7 @@ CREATE TABLE donatarios (
 );
 
 -- Criar tabela Projetos
-CREATE TABLE projetos (
+CREATE TABLE IF NOT EXISTS projetos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,
     descricao TEXT,
@@ -29,7 +29,7 @@ CREATE TABLE projetos (
 );
 
 -- Criar tabela Reuniões
-CREATE TABLE reunioes (
+CREATE TABLE IF NOT EXISTS reunioes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,
     descricao TEXT,
@@ -40,7 +40,7 @@ CREATE TABLE reunioes (
 );
 
 -- Criar tabela Editais
-CREATE TABLE editais (
+CREATE TABLE IF NOT EXISTS editais (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,
     descricao TEXT,
@@ -54,7 +54,7 @@ CREATE TABLE editais (
 );
 
 -- Criar tabela Relatórios
-CREATE TABLE relatorios (
+CREATE TABLE IF NOT EXISTS relatorios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,
     conteudo TEXT,
